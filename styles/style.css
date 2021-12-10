@@ -87,11 +87,11 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.company-logo {
+.hor-feedback-menu__company-logo {
     margin-left:1px;    
     margin-right:12px; 
 }
-.v-divider{
+.hor-feedback-menu__v-divider{
     margin-left:4px;
     margin-right:4px;
 }
@@ -214,8 +214,7 @@
     display: none;
 }
 .about-company__text{
-    padding:0 16px;
-    margin-bottom: 16px;
+    margin: 0 16px 16px;
 }
 .about-company-text{
     font-size: 14px;
@@ -248,7 +247,7 @@
     color: #1B1C21;
     font-weight: 500;
 }
-.about-company__img{
+.back-img{
     background:url("../images/page-services/cps-img-tables.png") 50% 50% no-repeat;
     background-size: 100% auto;
     width:100%;
@@ -295,10 +294,9 @@
         padding-right: 16px;
     }
     .about-company__text{
-        padding:0 17px 0 0;
-        
+        margin:0 17px 16px 0;        
     }
-    .about-company__img{
+    .back-img{
         width:50%;
         height: auto;
         flex-shrink:0;
@@ -309,7 +307,7 @@
     .hor-feedback-menu__v-divider--left{
         display:block;
     }
-    .company-logo {
+    .hor-feedback-menu__company-logo {
         margin-left:16px;  
         margin-right:0px;  
     }
@@ -320,10 +318,9 @@
         padding-right: 24px;
     }
     .about-company__text{
-        margin-bottom: 14px;
-        padding-right:27px;
+        margin:0 27px 14px 0;
     }
-    .about-company__img{
+    .back-img{
         width:50%;
         height: auto;
         flex-shrink:0;
@@ -337,7 +334,7 @@
 }
 @media screen and (min-width:700px){
     .about-company__text{
-        padding-right:37px;
+        margin-right:37px;
     }
 }
 @media screen and (min-width:750px){
@@ -357,7 +354,7 @@
         display: none;
     }
     .about-company__text{
-        padding-right: 47px;
+        margin-right: 47px;
     }
     .p-title__heading-title{
         margin-left: 20px;
@@ -389,7 +386,7 @@
         display: flex;
     }
     .about-company__text{
-        padding-right:36px;
+        margin-right:36px;
     }
     .about-company__paragraphs{
         
