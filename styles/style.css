@@ -70,7 +70,7 @@
     display:flex;
     align-items: center;
 }
-.hor-feedback-menu__right-side{
+.hor-feedback-menu-right-side{
     display:flex;
     align-items: center;
     justify-content:flex-start;
@@ -98,7 +98,9 @@
 .hor-feedback-menu__v-divider--left{
     display:none;
 }
-.btn--phone-icon,.btn--message-icon,.btn--profile-icon{
+.hor-feedback-menu-right-side__btn--num--first,
+.hor-feedback-menu-right-side__btn--num--sec,
+.hor-feedback-menu-right-side__btn--num--third{
     display:none;
 }
 .btn--phone-icon {
@@ -235,6 +237,9 @@
     background:url("../images/common/arr-down-ic.png") 50% 50% no-repeat;
 }
 .continuation__text{
+    margin-left:8px;    
+}
+.c-txt{
     display: inline-block; 
     line-height: 24px;
     font-size: 16px;
@@ -242,8 +247,6 @@
     letter-spacing: -0.2px;
     color: #1B1C21;
     font-weight: 500;
-    margin-left:8px;
-    
 }
 .about-company__img{
     background:url("../images/page-services/cps-img-tables.png") 50% 50% no-repeat;
@@ -261,26 +264,26 @@
         flex-basis:73.41%;
     }
    
-    .hor-feedback-menu__right-side{
+    .hor-feedback-menu-right-side{
         justify-content:flex-end;
     }
 
 }
 @media screen and (min-width:388px){
-    .btn--profile-icon{
+    .hor-feedback-menu-right-side__btn--num--third{
         display:block;
         margin-right:16px;
     }
 }
 
 @media screen and (min-width:440px){
-    .btn--message-icon{
+    .hor-feedback-menu-right-side__btn--num--sec{
         display:block;
         margin-right:16px;
     }
 }
 @media screen and (min-width:492px){
-    .btn--phone-icon{
+    .hor-feedback-menu-right-side__btn--num--first{
         display:block;
         margin-right:16px;
     }
