@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('../fonts/TTLakes/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Medium.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('../fonts/TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Bold.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('../fonts/TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.site{    
+    margin: 0;
+}
+.header {
+    padding:0;       
+}
+.hor-menu {
+    background-color: #fff;
+    display: flex;    
+    align-items:center;
+    justify-content: space-evenly;
+    height: 87px;
+}
+.btn {    
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;    
+}
+.hor-menu__btn{
+    flex-shrink:0;
+}
+.btn--round {
+    border-radius: 50%;
+}
+.btn--hamburger-icon {
+    background: #FF3E79 url("../images/site-header/hamburger-ic.svg") 50% 50% no-repeat;
+}
+.hor-feedback-menu {
+    display: flex;
+    justify-content:flex-start;
+    min-width:115px;
+    flex-shrink:1;
+}
+.hor-feedback-menu__left-side{
+    display:flex;
+    align-items: center;
+}
+.hor-feedback-menu__right-side{
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.hor-menu__left-side{
+    min-width:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hor-menu__right-side{
+    min-width:128px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.company-logo {
+    margin-left:1px;    
+    margin-right:12px; 
+}
+.v-divider{
+    margin-left:4px;
+    margin-right:4px;
+}
+.hor-feedback-menu__v-divider--left{
+    display:none;
+}
+.btn--phone-icon,.btn--message-icon,.btn--profile-icon{
+    display:none;
+}
+.btn--phone-icon {
+    background: #FF3E79 url("../images/site-header/phone-ic.svg") 50% 50% no-repeat;
+}
+.btn--message-icon {
+    background: #FF3E79 url("../images/site-header/message-ic.svg") 50% 50% no-repeat;
+}
+.btn--profile-icon {
+    background: #FF3E79 url("../images/site-header/profile-ic.svg") 50% 50% no-repeat;
+}
+.btn--services-icon {
+    background: #FF3E79 url("../images/site-header/services-ic.svg") 50% 50% no-repeat;
+}
+.btn--page-search-icon {
+    background: #FF3E79 url("../images/site-header/page-search-ic.svg") 50% 50% no-repeat;
+}
+.btn--search-icon {
+    background: #FF3E79 url("../images/site-header/search-ic.svg") 50% 50% no-repeat;
+    display:none;
+}
+
+.services {
+    font-family: 'TT Lakes', sans-serif;
+    background-color: #F8F8F8;
+}
+.services__page-heading {
+    padding-top:24px;
+}
+.page-heading__left-side{
+    display: flex;    
+}
+.page-heading__right-side{
+    display: none;
+}
+.page-heading__btn-with-text{
+    margin-right: 32px;
+}
+.btn-with-text{
+    display: flex;
+    align-items: center;
+}
+.btn-with-text__text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    letter-spacing: -0.2px;
+    font-weight:500;
+}
+.btn-with-text__btn{
+    margin-left:9px;
+}
+.r-rounded-border{
+    width: 0;
+    height: 40px;
+    border:0;
+    border-right: 4px solid  #41F6D7;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;   
+}
+.title {
+    margin:0;
+    font-size: 28px;
+    line-height: 40px;
+    color: #1B1C21;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: -0.6px;
+}
+.page-heading__title{
+    margin-left: 12px;
+}
+.services__hor-page-nav{
+    margin-left:16px;
+    margin-top:24px;
+}
+.hor-page-nav {
+    display: flex;
+    overflow-x:scroll;
+    position:relative;
+}
+.h-nav-item {
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 6px 16.5px 6px;
+    border:2px solid transparent;
+    border-radius: 6px;
+    background-color:transparent;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    font-weight: 500;
+}
+.h-nav-item--choosed{
+    border:2px solid #B8FFEC;
+    background-color:#fff;
+}
+.translucent-v-border{
+    position: absolute;
+    right:0;
+    width:21px;
+    height:100%;
+    background:linear-gradient(to left, #F8F8F8 5px,transparent);
+}
+.services__about-company{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.about-company__sec-paragraph{
+    display: none;
+}
+.about-company__text{
+    padding:0 16px;
+    margin-bottom: 16px;
+}
+.about-company__paragraphs{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+.continuation {
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    height: 24px;
+    line-height: 24px;
+}
+.two-arrs-down-img{
+    width:24px;
+    height:24px;
+    display: inline-block;
+    background:url("../images/common/arr-down-ic.png") 50% 50% no-repeat;
+}
+.continuation__text{
+    display: inline-block; 
+    line-height: 24px;
+    font-size: 16px;
+    vertical-align: top;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+    margin-left:8px;
+    
+}
+.about-company__img{
+    background:url("../images/page-services/cps-img-tables.png") 50% 50% no-repeat;
+    background-size: 100% auto;
+    width:100%;
+    padding-bottom:55%;
+}
+@media screen and (min-width:321px){
+    .header{
+        padding-left: 1.045%;
+        padding-right:1.045%; 
+    }
+    .hor-feedback-menu {
+        justify-content:space-between;
+        flex-basis:73.41%;
+    }
+   
+    .hor-feedback-menu__right-side{
+        justify-content:flex-end;
+    }
+
+}
+@media screen and (min-width:388px){
+    .btn--profile-icon{
+        display:block;
+        margin-right:16px;
+    }
+}
+
+@media screen and (min-width:440px){
+    .btn--message-icon{
+        display:block;
+        margin-right:16px;
+    }
+}
+@media screen and (min-width:492px){
+    .btn--phone-icon{
+        display:block;
+        margin-right:16px;
+    }
+}
+@media screen and (min-width:520px){
+    .about-company{
+        display: flex;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .about-company__text{
+        padding:0 17px 0 0;
+        
+    }
+    .about-company__img{
+        width:50%;
+        height: auto;
+        flex-shrink:0;
+        padding-bottom:0;
+    }
+}
+@media screen and (min-width:544px){
+    .hor-feedback-menu__v-divider--left{
+        display:block;
+    }
+    .company-logo {
+        margin-left:16px;  
+        margin-right:0px;  
+    }
+}
+@media screen and (min-width:576px){
+    .about-company{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .about-company__text{
+        margin-bottom: 14px;
+        padding-right:27px;
+    }
+    .about-company__img{
+        width:50%;
+        height: auto;
+        flex-shrink:0;
+        padding-bottom: 29%;
+    }
+    .about-company__first-paragraph{
+        margin-top: 6px;
+        margin-bottom: 21px;
+    }
+    
+}
+@media screen and (min-width:700px){
+    .about-company__text{
+        padding-right:37px;
+    }
+}
+@media screen and (min-width:750px){
+    .services__about-company{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .services__hor-page-nav{
+        margin-left:24px;
+        margin-top:32px;
+    }
+    .about-company__sec-paragraph{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .sec-paragraph__sec-part{
+        display: none;
+    }
+    .about-company__text{
+        padding-right: 47px;
+    }
+    .page-heading__title{
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width:1050px){
+    .header{
+        display:none;
+    }
+    .hor-page-nav{
+        overflow-x: hidden;
+        flex-wrap:wrap;
+    }
+    .services__hor-page-nav{
+        margin-left:34px;
+        margin-top:8px;
+    }
+    .services__page-heading{
+        padding-top:42px;
+    }
+    .services__about-company{
+        padding: 7px 28.65px 51px 34px;
+    }
+    .page-heading{
+        display: flex;
+        justify-content: space-between;
+    }
+    .page-heading__right-side{
+        display: flex;
+    }
+    .about-company__text{
+        padding-right:36px;
+    }
+    .about-company__paragraphs{
+        
+        margin-bottom:14px;
+    }
+    .about-company__first-paragraph{
+        margin-top:9px;
+        margin-bottom: 17px;
+    }
+    .sec-paragraph__sec-part{
+        display: inline;
+    }
+    .page-heading__title{
+        margin-left: 30px;
+    }
+}
