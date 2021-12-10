@@ -128,13 +128,13 @@
 .services__page-heading {
     padding-top:24px;
 }
-.page-heading__left-side{
+.p-title{
     display: flex;    
 }
-.page-heading__right-side{
+.page-heading-right-side{
     display: none;
 }
-.page-heading__btn-with-text{
+.page-heading-right-side__btn-with-text{
     margin-right: 32px;
 }
 .btn-with-text{
@@ -159,7 +159,7 @@
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;   
 }
-.title {
+.heading-title {
     margin:0;
     font-size: 28px;
     line-height: 40px;
@@ -168,7 +168,7 @@
     font-style: normal;
     letter-spacing: -0.6px;
 }
-.page-heading__title{
+.p-title__heading-title{
     margin-left: 12px;
 }
 .services__hor-page-nav{
@@ -208,14 +208,14 @@
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.about-company__sec-paragraph{
+.about-company-text__sec-paragraph{
     display: none;
 }
 .about-company__text{
     padding:0 16px;
     margin-bottom: 16px;
 }
-.about-company__paragraphs{
+.about-company-text{
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
@@ -326,7 +326,7 @@
         flex-shrink:0;
         padding-bottom: 29%;
     }
-    .about-company__first-paragraph{
+    .about-company-text__first-paragraph{
         margin-top: 6px;
         margin-bottom: 21px;
     }
@@ -346,7 +346,7 @@
         margin-left:24px;
         margin-top:32px;
     }
-    .about-company__sec-paragraph{
+    .about-company-text__sec-paragraph{
         display: block;
         margin-bottom: 10px;
     }
@@ -356,7 +356,7 @@
     .about-company__text{
         padding-right: 47px;
     }
-    .page-heading__title{
+    .p-title__heading-title{
         margin-left: 20px;
     }
 }
@@ -382,7 +382,7 @@
         display: flex;
         justify-content: space-between;
     }
-    .page-heading__right-side{
+    .page-heading-right-side{
         display: flex;
     }
     .about-company__text{
@@ -392,14 +392,14 @@
         
         margin-bottom:14px;
     }
-    .about-company__first-paragraph{
+    .about-company-text__first-paragraph{
         margin-top:9px;
         margin-bottom: 17px;
     }
     .sec-paragraph__sec-part{
         display: inline;
     }
-    .page-heading__title{
+    .p-title__heading-title{
         margin-left: 30px;
     }
 }
