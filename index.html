@@ -8,73 +8,77 @@
     <link rel="stylesheet" href="./styles/style.css">    
 </head>
 <body class="site">
-    <header class="header">
-        <section class="hor-menu">
-            <div class="hor-menu__left-side">
-                <button class="btn hor-menu__btn btn--round btn--hamburger-icon" type="button"></button>
-            </div>
-            <div class="hor-feedback-menu">
-                <div class="hor-feedback-menu__left-side">
-                    <img src="./images/site-header/v-divider-ic.png" alt="vertical divider" class="hor-feedback-menu__v-divider hor-feedback-menu__v-divider--left">
-                    <img src="./images/site-header/logo.svg" alt="CPS-company logo" class="hor-feedback-menu__company-logo">
+    <div class="site__container">
+        <header class="header">
+            <section class="btns-group">
+                <div class="btns-group__left-side">
+                    <button class="btn btns-group__btn btn--round btn--hamburger-icon" type="button"></button>
                 </div>
-                <div class="hor-feedback-menu-right-side">
-                    <button class="btn btn--round btn--phone-icon hor-feedback-menu-right-side__btn hor-feedback-menu-right-side__btn--num--first" type="button"></button>
-                    <button class="btn btn--round btn--message-icon hor-feedback-menu-right-side__btn hor-feedback-menu-right-side__btn--num--sec" type="button"></button>
-                    <button class="btn btn--round btn--profile-icon hor-feedback-menu-right-side__btn hor-feedback-menu-right-side__btn--num--third" type="button"></button> 
-                    <img src="./images/site-header/v-divider-ic.png" alt="vertical divider" class="hor-feedback-menu__v-divider">
+                <div class="feedback-btns-group">
+                    <div class="feedback-btns-group__left-side">
+                        <img src="./images/site-header/v-divider-ic.png" alt="vertical divider" class="feedback-btns-group__v-divider feedback-btns-group__v-divider--left">
+                        <a href="/index.html">
+                            <img src="./images/site-header/logo.svg" alt="CPS-company logo" class="feedback-btns-group__company-logo">
+                        </a>
+                    </div>
+                    <div class="feedback-btns-group-right-side">
+                        <button class="btn btn--round btn--phone-icon feedback-btns-group-right-side__btn feedback-btns-group-right-side__btn--num--first" type="button"></button>
+                        <button class="btn btn--round btn--message-icon feedback-btns-group-right-side__btn feedback-btns-group-right-side__btn--num--sec" type="button"></button>
+                        <button class="btn btn--round btn--profile-icon feedback-btns-group-right-side__btn feedback-btns-group-right-side__btn--num--third" type="button"></button> 
+                        <img src="./images/site-header/v-divider-ic.png" alt="vertical divider" class="feedback-btns-group__v-divider">
+                    </div>
                 </div>
-            </div>
-            <div class="hor-menu__right-side">
-                <button class="btn hor-menu__btn btn--round btn--services-icon" type="button"></button>
-                <button class="btn hor-menu__btn btn--round btn--page-search-icon" type="button"></button>    
-                <button class="btn hor-menu__btn btn--round btn--search-icon" type="button"></button>   
-            </div>            
-        </section>
-    </header>
-    <aside class="v-navbar site__v-navbar"></aside><!--пока не делаем-->
-    <main class="services">
-        <header class="page-heading services__page-heading">
-            <div class="p-title">
-                <div class="r-rounded-border"></div>
-                <h1 class="heading-title p-title__heading-title">Услуги и сервисы</h1>
-            </div>
-            <div class="page-heading-right-side">
-                <div class="page-heading-right-side__btn-with-text btn-with-text">
-                    <label for="btn-services" class="btn-with-text__text">Оставить заявку</label>
-                    <button id="btn-services" class="btn-with-text__btn btn btn--round btn--services-icon" type="button"></button>
-                </div>
-                <div class="page-heading-right-side__btn-with-text btn-with-text">
-                    <label for="btn-services" class="btn-with-text__text">Статус ремонта</label>
-                    <button id="btn-services" class="btn-with-text__btn btn btn--round btn--page-search-icon" type="button"></button>
-                </div>
-            </div>
+                <div class="btns-group__right-side">
+                    <button class="btn btns-group__btn btn--round btn--services-icon" type="button"></button>
+                    <button class="btn btns-group__btn btn--round btn--page-search-icon" type="button"></button>    
+                    <button class="btn btns-group__btn btn--round btn--search-icon" type="button"></button>   
+                </div>            
+            </section>
         </header>
-        <nav class="hor-page-nav services__hor-page-nav">
-            <a href="#" class="h-nav-item h-nav-item--choosed">Ремонтируемые устройства</a>
-            <a href="#" class="h-nav-item">Дополнительные услуги</a>
-            <a href="#" class="h-nav-item">Цены на услуги</a>
-            <a href="#" class="h-nav-item">Адреса сервисных центров</a>
-            <a href="#" class="h-nav-item">Специальные цены</a>
-            <a href="#" class="h-nav-item">Отзывы</a>
-            <div class="translucent-v-border"></div>
-        </nav>
-        <article class="about-company services__about-company">
-            <div class="about-company__text">
-                <div class="about-company-text about-company__paragraphs">
-                    <p class="about-company-text__first-paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p class="about-company-text__sec-paragraph sec-paragraph">
-                        <span class="sec-paragraph__first-part">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
-                        <span class="sec-paragraph__sec-part">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
-                    </p>                    
+        <aside class="navbar site__navbar"></aside><!--пока не делаем-->
+        <main class="services">
+            <header class="page-heading services__page-heading">
+                <div class="page-title">
+                    <div class="right-rounded-border"></div>
+                    <h1 class="heading-title page-title__heading-title">Услуги и сервисы</h1>
                 </div>
-                <button class="continuation btn" type="button">
-                    <span class="two-arrs-down-img"></span>
-                    <span class="continuation__text c-txt">Читать далее</span>                
-                </button>
-            </div>
-            <div alt="Cps img" class="back-img"> </div>  
-        </article>
-    </main>
+                <div class="page-heading-right-side">
+                    <div class="page-heading-right-side__btn-with-text btn-with-text">
+                        <label for="btn-services" class="btn-with-text__text">Оставить заявку</label>
+                        <button id="btn-services" class="btn-with-text__btn btn btn--round btn--services-icon" type="button"></button>
+                    </div>
+                    <div class="page-heading-right-side__btn-with-text btn-with-text">
+                        <label for="btn-services" class="btn-with-text__text">Статус ремонта</label>
+                        <button id="btn-services" class="btn-with-text__btn btn btn--round btn--page-search-icon" type="button"></button>
+                    </div>
+                </div>
+            </header>
+            <nav class="hor-page-nav services__hor-page-nav">
+                <a href="#" class="nav-item nav-item--choosed">Ремонтируемые устройства</a>
+                <a href="#" class="nav-item">Дополнительные услуги</a>
+                <a href="#" class="nav-item">Цены на услуги</a>
+                <a href="#" class="nav-item">Адреса сервисных центров</a>
+                <a href="#" class="nav-item">Специальные цены</a>
+                <a href="#" class="nav-item">Отзывы</a>
+                <div class="translucent-vertical-border"></div>
+            </nav>
+            <article class="about-company services__about-company">
+                <div class="about-company__text">
+                    <div class="about-company-text about-company__paragraphs">
+                        <p class="about-company-text__first-paragraph">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p class="about-company-text__sec-paragraph sec-paragraph">
+                            <span class="sec-paragraph__first-part">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
+                            <span class="sec-paragraph__sec-part">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+                        </p>                    
+                    </div>
+                    <button class="continuation btn" type="button">
+                        <span class="two-arrs-down-img"></span>
+                        <span class="continuation__text text">Читать далее</span>                
+                    </button>
+                </div>
+                <div alt="Cps img" class="back-img"> </div>  
+            </article>
+        </main>
+    </div>
 </body>
 </html>
