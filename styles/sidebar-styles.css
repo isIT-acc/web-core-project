@@ -1,0 +1,29 @@
+.site__navbar{
+    position: absolute;
+    left:0;    
+}
+.navbar{
+    width: 320px;
+    height: 100vh;
+}
+.navbar__btns-group-right-side{
+    justify-content: flex-end;
+}
+
+.btns-group-left-side__btn{
+    margin-left: 22.5px;
+}
+.navbar__btns-group-left-side{
+    justify-content: flex-start;
+}
+.btns-group-right-side__btn{
+    margin-right: 22.5px;
+}
+.navbar__company-logo{
+    margin-left:8px;    
+    margin-right:5px;
+}
+.btn--close-icon {
+    background: #FF3E79 url("../images/site-header/close-ic.svg") 50% 50% no-repeat;
+}
+/* остановился на внутренних отступах в меню */

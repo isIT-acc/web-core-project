@@ -33,7 +33,7 @@
 }
 .site__container{
    max-width:1120px;
-   margin:0 auto; 
+   margin:0 auto;
 }
 .header {
     padding:0;       
@@ -55,7 +55,7 @@
     border: 0;
     background-color: transparent;    
 }
-.btns-group__btn{
+.btn--flex-shrink--none{
     flex-shrink:0;
 }
 .btn--round {
@@ -70,7 +70,7 @@
     min-width:115px;
     flex-shrink:1;
 }
-.feedback-btns-group__left-side{
+.feedback-btns-group-left-side{
     display:flex;
     align-items: center;
 }
@@ -79,13 +79,13 @@
     align-items: center;
     justify-content:flex-start;
 }
-.btns-group__left-side{
+.btns-group-left-side{
     min-width:70px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btns-group__right-side{
+.btns-group-right-side{
     min-width:128px;
     display: flex;
     justify-content: space-evenly;
@@ -126,7 +126,9 @@
     background: #FF3E79 url("../images/site-header/search-ic.svg") 50% 50% no-repeat;
     display:none;
 }
-
+.btn--show{
+    display: block;
+}
 .services {
     font-family: 'TT Lakes', sans-serif;
     background-color: #F8F8F8;
