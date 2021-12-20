@@ -26,4 +26,125 @@
 .btn--close-icon {
     background: #FF3E79 url("../images/site-header/close-ic.svg") 50% 50% no-repeat;
 }
-/* остановился на внутренних отступах в меню */
+.vertical-menu{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.menu-item{
+    display:flex;
+    align-items:center;
+    margin:0;
+    padding:0;    
+}
+.right-rounded-border--small{
+    height: 32px;
+}
+.link{
+    text-decoration:none;
+    display: block;
+    color:#1B1C21;
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    padding-bottom:16px;
+    padding-top:16px;
+    width:100%;
+}
+.menu-item__link{
+    padding-left:20px;
+}
+.link--choosed{
+    color:#7E7E82;
+}
+.navbar__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc( 100% - 104px );
+    margin-top: 17px;
+}
+.navbar__feedback-btns-group{
+    margin-left: 24px;
+    justify-content: flex-start;
+}
+.feedback-btns-group__btn--margin-left--16px{
+    margin-left: 16px;
+}
+.company-phone{
+    font-family: TT Lakes;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.company-email{
+    font-family: TT Lakes;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    font-weight: 500;
+}
+.navbar__languages{
+    margin-left: 24px;
+}
+.btn--small{
+    width:27.5px;
+    height: 27.5px;
+    min-width: 27.5px;
+    font-size: 16px;
+    line-height: 27.5px;
+    letter-spacing: -0.2px;
+}
+.btn--margin-left--7px{
+    margin-left: 7px;
+}
+.btn--choosed{
+    color: #7E7E82;
+}
+.navbar__company-email{
+    margin-left: 24px;
+}
+.navbar__company-phone{
+    margin-left: 24px;
+}
+.footer__feedback-btns-group{
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.footer__company-email{
+    margin-bottom: 12px;
+}
+.footer__company-phone{
+    margin-bottom: 40px;
+}
+.footer__languages{
+    margin-bottom: 32px;
+}
+
+/* Interactive buttons */
+.menu-item__link:focus,
+.menu-item__link:hover:not(.link--choosed),
+.btn--interactive--change-bg-1:focus,
+.btn--interactive--change-bg-1:hover{
+    background-color: rgb(245, 244, 244);
+    transition: background-color 0.3s;
+}
+
+.btn--interactive--change-bg-2:focus,
+.btn--interactive--change-bg-2:hover{
+    background-color: #e42861;
+    transition: background-color 0.3s;
+}
+
+.menu-item__link:hover,
+.btn--interactive--change-bg-2:hover,
+.btn--interactive--change-bg-1:hover{
+    cursor:pointer;
+}
+

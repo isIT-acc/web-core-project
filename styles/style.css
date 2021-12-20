@@ -53,7 +53,9 @@
     padding: 0;
     margin: 0;
     border: 0;
-    background-color: transparent;    
+    background-color: transparent;  
+    font-family: TT Lakes;
+    font-weight:500;
 }
 .btn--flex-shrink--none{
     flex-shrink:0;
@@ -64,17 +66,17 @@
 .btn--hamburger-icon {
     background: #FF3E79 url("../images/site-header/hamburger-ic.svg") 50% 50% no-repeat;
 }
-.feedback-btns-group {
+.logo-and-feedback-btns {
     display: flex;
     justify-content:flex-start;
     min-width:115px;
     flex-shrink:1;
 }
-.feedback-btns-group-left-side{
+.logo-and-feedback-btns-left-side{
     display:flex;
     align-items: center;
 }
-.feedback-btns-group-right-side{
+.feedback-btns-group{
     display:flex;
     align-items: center;
     justify-content:flex-start;
@@ -91,20 +93,20 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.feedback-btns-group__company-logo {
+.logo-and-feedback-btns__company-logo {
     margin-left:1px;    
     margin-right:12px; 
 }
-.feedback-btns-group__v-divider{
+.logo-and-feedback-btns__v-divider{
     margin-left:4px;
     margin-right:4px;
 }
-.feedback-btns-group__v-divider--left{
+.logo-and-feedback-btns__v-divider--left{
     display:none;
 }
-.feedback-btns-group-right-side__btn--num--first,
-.feedback-btns-group-right-side__btn--num--sec,
-.feedback-btns-group-right-side__btn--num--third{
+.feedback-btns-group__btn--num--first,
+.feedback-btns-group__btn--num--sec,
+.feedback-btns-group__btn--num--third{
     display:none;
 }
 .btn--phone-icon {
@@ -165,9 +167,13 @@
     border:0;
     border-right: 4px solid  #41F6D7;
     border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;   
+    border-bottom-right-radius: 25px;
+    visibility: hidden;
 }
-.heading-title {
+.right-rounded-border--visible{
+    visibility: visible;
+}
+.heading {
     margin:0;
     font-size: 28px;
     line-height: 40px;
@@ -176,7 +182,7 @@
     font-style: normal;
     letter-spacing: -0.6px;
 }
-.page-title__heading-title{
+.page-title__heading{
     margin-left: 12px;
 }
 .services__hor-page-nav{
@@ -268,31 +274,31 @@
         padding-left: 1.045%;
         padding-right:1.045%; 
     }
-    .feedback-btns-group {
+    .logo-and-feedback-btns {
         justify-content:space-between;
         flex-basis:73.41%;
     }
    
-    .feedback-btns-group-right-side{
+    .feedback-btns-group{
         justify-content:flex-end;
     }
 
 }
 @media screen and (min-width:388px){
-    .feedback-btns-group-right-side__btn--num--third{
+    .feedback-btns-group__btn--num--third{
         display:block;
         margin-right:16px;
     }
 }
 
 @media screen and (min-width:440px){
-    .feedback-btns-group-right-side__btn--num--sec{
+    .feedback-btns-group__btn--num--sec{
         display:block;
         margin-right:16px;
     }
 }
 @media screen and (min-width:492px){
-    .feedback-btns-group-right-side__btn--num--first{
+    .feedback-btns-group__btn--num--first{
         display:block;
         margin-right:16px;
     }
@@ -314,10 +320,10 @@
     }
 }
 @media screen and (min-width:544px){
-    .feedback-btns-group__v-divider--left{
+    .logo-and-feedback-btns__v-divider--left{
         display:block;
     }
-    .feedback-btns-group__company-logo {
+    .logo-and-feedback-btns__company-logo {
         margin-left:16px;  
         margin-right:0px;  
     }
@@ -366,12 +372,12 @@
     .about-company__text{
         margin-right: 47px;
     }
-    .page-title__heading-title{
+    .page-title__heading{
         margin-left: 20px;
     }
 }
 @media screen and (min-width:1050px){
-    .header{
+    .site__header{
         display:none;
     }
     .hor-page-nav{
@@ -409,7 +415,7 @@
     .sec-paragraph__sec-part{
         display: inline;
     }
-    .page-title__heading-title{
+    .page-title__heading{
         margin-left: 30px;
     }
 }
