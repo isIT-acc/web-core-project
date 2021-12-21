@@ -147,4 +147,10 @@
 .btn--interactive--change-bg-1:hover{
     cursor:pointer;
 }
+.link--choosed:hover{
+    cursor:default;
+}
+.menu-item:hover{
+    cursor: pointer;
+}
 
