@@ -153,4 +153,6 @@
 .menu-item:hover{
     cursor: pointer;
 }
-
+.btn--choosed:hover{
+    cursor:default;
+}
