@@ -3,8 +3,8 @@
     left:0;    
 }
 .navbar{
-    width: 320px;
-    height: 100vh;
+    width: 320px;    
+    box-shadow: -2px 0px 4px rgb(69 79 126 / 2%), 16px 0px 52px rgb(14 24 80 / 20%);
 }
 .navbar__btns-group-right-side{
     justify-content: flex-end;
@@ -31,7 +31,7 @@
     margin:0;
     padding:0;
 }
-.menu-item{
+.vertical-menu__item{
     display:flex;
     align-items:center;
     margin:0;
@@ -53,7 +53,7 @@
     padding-top:16px;
     width:100%;
 }
-.menu-item__link{
+.vertical-menu__link{
     padding-left:20px;
 }
 .link--choosed{
@@ -74,6 +74,8 @@
     margin-left: 16px;
 }
 .company-phone{
+    text-decoration:none;
+    display:block;
     font-family: TT Lakes;
     font-size: 24px;
     line-height: 32px;
@@ -83,6 +85,8 @@
     white-space: nowrap;
 }
 .company-email{
+    text-decoration: none;
+    display:block;
     font-family: TT Lakes;
     font-size: 16px;
     line-height: 24px;
@@ -108,31 +112,33 @@
     color: #7E7E82;
 }
 .navbar__company-email{
-    margin-left: 24px;
+    margin-left: 21px;
+    padding:3px;
 }
 .navbar__company-phone{
-    margin-left: 24px;
+    margin-left: 19px;
 }
 .footer__feedback-btns-group{
-    margin-bottom: 16px;
+    margin-bottom: 13px;
     margin-top: 16px;
 }
 .footer__company-email{
-    margin-bottom: 12px;
+    margin-bottom: 4px;
 }
 .footer__company-phone{
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    padding:5px;
 }
 .footer__languages{
     margin-bottom: 32px;
 }
 
 /* Interactive buttons */
-.menu-item__link:focus,
-.menu-item__link:hover:not(.link--choosed),
+.vertical-menu__link:focus,
+.vertical-menu__link:hover:not(.link--choosed),
 .btn--interactive--change-bg-1:focus,
 .btn--interactive--change-bg-1:hover{
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(216, 215, 215);
     transition: background-color 0.3s;
 }
 
@@ -142,7 +148,7 @@
     transition: background-color 0.3s;
 }
 
-.menu-item__link:hover,
+.vertical-menu__link:hover,
 .btn--interactive--change-bg-2:hover,
 .btn--interactive--change-bg-1:hover{
     cursor:pointer;
@@ -150,9 +156,39 @@
 .link--choosed:hover{
     cursor:default;
 }
-.menu-item:hover{
+.vertical-menu__item:hover{
     cursor: pointer;
 }
 .btn--choosed:hover{
     cursor:default;
+}
+
+.navbar__company-logo:hover{
+    cursor:pointer;
+}
+.logo-and-feedback-btns-left-side__logo-link:hover,
+.logo-and-feedback-btns-left-side__logo-link:focus{
+    background-color: rgb(216, 215, 215);
+    transition: background-color 0.3s;
+}
+.logo-and-feedback-btns-left-side__logo-link:hover{
+    cursor:pointer;
+}
+.navbar__company-email:hover,
+.navbar__company-phone:hover,
+.navbar__company-email:focus,
+.navbar__company-phone:focus{
+    display:inline-block;
+    background-color: rgb(216, 215, 215);
+    transition: background-color 0.3s;
+}
+.navbar__company-email:hover,
+.navbar__company-phone:hover{
+    cursor:pointer;
+}
+
+@media screen and (min-height:791px){
+    .navbar{
+        height:100vh;
+    }
 }
