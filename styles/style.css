@@ -28,6 +28,9 @@
     font-weight: normal;
     font-style: normal;
 }
+body{
+    margin: 0;
+}
 .site{    
     margin: 0;
 }

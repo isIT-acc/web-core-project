@@ -168,8 +168,8 @@
 }
 .logo-and-feedback-btns-left-side__logo-link:hover,
 .logo-and-feedback-btns-left-side__logo-link:focus{
-    background-color: rgb(216, 215, 215);
-    transition: background-color 0.3s;
+    filter:brightness(0.7);
+    transition: all 0.3s;
 }
 .logo-and-feedback-btns-left-side__logo-link:hover{
     cursor:pointer;
