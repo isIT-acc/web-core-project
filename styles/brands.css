@@ -131,7 +131,14 @@
 .swiper__continuation{
     display:none;
 }
-
+.two-arrs-down-img--height--82{
+    height: 82px;
+}
+.continuation__text{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
 
 @media screen and (min-width:375px){
     .subheading__text{

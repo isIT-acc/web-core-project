@@ -2,7 +2,7 @@ function addCheckboxClickListener(hiddenTextLabel){
   var checkbox=hiddenTextLabel.children[0];
   checkbox.addEventListener("change",function(){
     if(this.checked){
-      hiddenTextLabel.style.transform="translateY(14px)";
+      hiddenTextLabel.style.transform="translateY(-50%) translateY(15px)";
       if(swiperWrapper) swiperWrapper.style.height="332px";
       this.nextElementSibling.nextSibling.textContent='Скрыть';
     }

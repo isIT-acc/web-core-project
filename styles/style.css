@@ -266,10 +266,14 @@ body{
 .continuation__checkbox:checked+.two-arrs-down-img{
     transform: rotate(180deg);
 }
+.continuation__checkbox:focus+.two-arrs-down-img {
+    box-shadow: 0 0 0 2px #000;
+}
 .continuation__text{
     transform: translateY(-6px);
     cursor:pointer;
 }
+
 .text{
     display: inline-block; 
     line-height: 24px;
