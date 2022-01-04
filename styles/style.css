@@ -252,11 +252,23 @@ body{
 .two-arrs-down-img{
     width:24px;
     height:24px;
+    margin-right: 9px;
     display: inline-block;
+    vertical-align: top;
     background:url("../images/common/arr-down-ic.png") 50% 50% no-repeat;
 }
+.continuation__checkbox{
+    position: absolute;
+    width:1px;
+    height:1px;
+    clip: rect(0px,0px,0px,0px);
+}
+.continuation__checkbox:checked+.two-arrs-down-img{
+    transform: rotate(180deg);
+}
 .continuation__text{
-    margin-left:8px;    
+    transform: translateY(-6px);
+    cursor:pointer;
 }
 .text{
     display: inline-block; 
