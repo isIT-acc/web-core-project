@@ -1,4 +1,5 @@
 var hiddenTextLabel=document.querySelectorAll(".continuation__text");
+var swiperWrapper=document.querySelector(".swiper-wrapper");
 
 function addCheckboxClickListener(hiddenTextLabel){
   var swiperShowAllBlock=hiddenTextLabel.parentElement;
@@ -28,13 +29,11 @@ if(hiddenTextLabel.length>0){
 window.addEventListener("resize",function(event){
   if(window.innerWidth<768){
     if(swiperWrapper&&swiperWrapper.style.height) swiperWrapper.style.removeProperty("height");
-    if(hiddenTextLabel) hiddenTextLabel.parentElement.style.removeProperty("position");
   }
   else{ 
-    swiperWrapper.removeAttribute("style");
+    if(swiperWrapper) swiperWrapper.removeAttribute("style");
     if(swiperWrapper && !swiperWrapper.style.height && document.querySelector(".swiper__continuation .continuation__checkbox").checked){
       swiperWrapper.style.height="auto";
-      hiddenTextLabel.parentElement.style.position="relative";
     }
   }
 })
