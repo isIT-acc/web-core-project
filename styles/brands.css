@@ -102,6 +102,7 @@
 }
 
 .brand-item{
+    cursor:pointer;
     box-sizing:border-box;
     height: 72px;
     background-color: #fff;
@@ -110,6 +111,12 @@
     display: flex;
     align-items:center;
     justify-content: space-between;
+}
+.brand-item:hover,
+.brand-item:focus{    
+    background: rgba(0,0,0,0.1);
+    transform: scale(1.1);
+    transition: all 0.2s ease-out;
 }
 .brand-name{
     line-height: 72px;
@@ -186,7 +193,7 @@
         width: 100%;
         bottom:0;
         text-align: left;
-        height: 82px;
+        height: 70px;
         background-color: #F8F8F8;
         z-index:1;
     }    

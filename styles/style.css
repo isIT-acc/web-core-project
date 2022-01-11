@@ -32,7 +32,8 @@ body{
     margin: 0;
 }
 .site{    
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1366px;
 }
 .site__container{
    max-width:1120px;
@@ -257,7 +258,7 @@ body{
     vertical-align: top;
     background:url("../images/common/arr-down-ic.png") 50% 50% no-repeat;
 }
-.continuation__checkbox{
+/* .continuation__checkbox{
     position: absolute;
     width:1px;
     height:1px;
@@ -268,12 +269,53 @@ body{
 }
 .continuation__checkbox:focus+.two-arrs-down-img {
     box-shadow: 0 0 0 2px #000;
-}
+} */
 .continuation__text{
     transform: translateY(-6px);
-    cursor:pointer;
+    cursor:pointer;    
+    overflow: hidden;
 }
-
+.continuation__text:after{
+    content:"Показать все";
+    margin-right: 5px;
+}
+.continuation__text:before{
+    content:"";
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+    display: inline-block;
+    vertical-align: top;
+    background: url("../images/common/arr-down-ic.png") 50% 50% no-repeat;
+}
+.continuation__text--displayed:before{
+    transform: rotate(180deg);    
+}
+.continuation__text--displayed:after{
+    content:"Скрыть";
+}
+.continuation__text:hover,
+.continuation__text:focus{
+    display:inline-block;
+    /* background-color: #d3d3d3;
+    transition: background-color 0.3s; */
+    outline: none;
+}
+.continuation__text:hover .text__underline,
+.continuation__text:focus .text__underline{
+    transform: translateX(0);    
+    transition:transform 0.2s ease-out;
+}
+.text__underline{
+    display: inline-block;
+    border-bottom:1.2px solid #41F6D7;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    transform:translateX(-100%);
+}
 .text{
     display: inline-block; 
     line-height: 24px;
