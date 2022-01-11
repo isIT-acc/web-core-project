@@ -1,3 +1,5 @@
+var hiddenTextLabel=document.querySelectorAll(".continuation__text");
+
 function addCheckboxClickListener(hiddenTextLabel){
   var checkbox=hiddenTextLabel.children[0];
   checkbox.addEventListener("change",function(){
@@ -13,8 +15,6 @@ function addCheckboxClickListener(hiddenTextLabel){
     }
   });
 }
-var swiperWrapper=document.querySelector(".swiper-wrapper");
-var hiddenTextLabel=document.querySelectorAll(".continuation__text");
 
 if(hiddenTextLabel.length>0){
   for(var i=0;i<hiddenTextLabel.length;i++){
@@ -23,13 +23,13 @@ if(hiddenTextLabel.length>0){
 }
 
 window.addEventListener("resize",function(event){
-    if(window.innerWidth<768){
-      if(swiperWrapper&&swiperWrapper.style.height) swiperWrapper.style.removeProperty("height");
+  if(window.innerWidth<768){
+    if(swiperWrapper&&swiperWrapper.style.height) swiperWrapper.style.removeProperty("height");
+  }
+  else{ 
+    swiperWrapper.removeAttribute("style");
+    if(swiperWrapper && !swiperWrapper.style.height && document.querySelector(".swiper__continuation .continuation__checkbox").checked){
+      swiperWrapper.style.height="332px";
     }
-    else{ 
-      swiperWrapper.removeAttribute("style");
-      if(swiperWrapper && !swiperWrapper.style.height && document.querySelector(".swiper__continuation .continuation__checkbox").checked){
-        swiperWrapper.style.height="332px";
-      }
-    }
-  })
+  }
+})

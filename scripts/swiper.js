@@ -24,5 +24,10 @@ var swiper = new Swiper('.swiper', {
     if(swiperWrapper && window.innerWidth>=768){
       swiperWrapper.style.removeProperty("transform");
     }
+    else{
+      if(swiper.isEnd && swiperWrapper){
+        swiperWrapper.style.marginLeft="-65px";
+      }
+    }
   });
   swiper = document.querySelector('.swiper').swiper;
