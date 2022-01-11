@@ -26,7 +26,10 @@ window.addEventListener("resize",function(event){
     if(window.innerWidth<768){
       if(swiperWrapper&&swiperWrapper.style.height) swiperWrapper.style.removeProperty("height");
     }
-    else if(swiperWrapper && !swiperWrapper.style.height && document.querySelector(".swiper__continuation .continuation__checkbox").checked){
-      swiperWrapper.style.height="332px";
+    else{ 
+      swiperWrapper.removeAttribute("style");
+      if(swiperWrapper && !swiperWrapper.style.height && document.querySelector(".swiper__continuation .continuation__checkbox").checked){
+        swiperWrapper.style.height="332px";
+      }
     }
   })
