@@ -258,18 +258,6 @@ body{
     vertical-align: top;
     background:url("../images/common/arr-down-ic.png") 50% 50% no-repeat;
 }
-/* .continuation__checkbox{
-    position: absolute;
-    width:1px;
-    height:1px;
-    clip: rect(0px,0px,0px,0px);
-}
-.continuation__checkbox:checked+.two-arrs-down-img{
-    transform: rotate(180deg);
-}
-.continuation__checkbox:focus+.two-arrs-down-img {
-    box-shadow: 0 0 0 2px #000;
-} */
 .continuation__text{
     transform: translateY(-6px);
     cursor:pointer;    
